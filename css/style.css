@@ -1,0 +1,226 @@
+#nav_bar{
+	background-color:#537756;
+	border-radius:0;
+	position:fixed;
+	z-index:300;
+	width:100%!important;
+	
+}
+.navbar  a {color:white!important;}
+
+#text_box{
+	padding:10px 15px;
+}
+li :hover {
+   background-color:transparent!important;
+}
+.navbar a:hover {
+   color:#faff82!important;
+}
+#ft{background-color:#537756}
+
+/*-------carusel--------*/
+
+#carousel {
+    width:100%;
+    height: 300px;
+    display: relative;
+	background-image:url('bgm1.jpg');
+	background-size:100% 300px;
+	
+	margin-top:40px!important;
+  }
+  
+  #carousel img {
+    display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
+	width:240px;
+	height:240px;
+	border:5px groove #663300;
+  }
+  
+ .fem{font-family:chan;font-size:55px;}
+ .card{padding-left:20px!important;background-color:#545454;}
+ 
+/*--------3d card animation-----*/
+.flip3D{ width:240px; height:200px; margin:10px; float:left; }
+.flip3D > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:#FC0; width:240px; height:200px; border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+
+#sr{
+	background-image:url('../images/sr.jpg');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+}
+
+
+#tan{
+	background-image:url('../images/tan.jpg');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+}
+
+
+#p{
+	background-image:url('../images/p.jpg');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+}
+
+#ps{
+	background-image:url('../images/ps.jpg');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+}
+
+#ct{
+	background-image:url('../images/ct.jpg');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+}
+
+#rjn{
+	background-image:url('../images/rjn.jpg');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+}
+
+#a{
+	background-image:url('../images/a.jpg');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+}
+
+#ntr{
+	background-image:url('../images/ntr.jpg');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+}
+#ysr{
+	background-image:url('../images/ysr.jpg');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+}
+
+#ram{
+	background-image:url('../images/ram.JPG');
+	background-size: 240px 200px;
+	border:2px solid #fff;
+	
+}
+
+#ram:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+#ysr:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+#ntr:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+#p:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+#ps:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+#a:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+#rjn:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+#ct:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+#tan:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+#sr:hover {box-shadow: -.5px 3px 0px 10px #fff;}
+.flip3D > .back{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #4f5651; width:240px; height:200px; border-radius: 7px; color:white;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip3D:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+
+
+/*----scroll back to top------*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: ;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  background-image:url('../images/emb.png');
+  background-size:cover;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+#mrbox{
+	border:1px groove #ff8026;
+	color:black;
+	text-align:justify!important;;
+	
+}
+.td a{
+	text-decoration:none;
+	color:black;
+}
+#footer{
+	background-color:#8f8f8f;
+	height:px;
+	text-align:justify;
+}
+
+
+
+
+
+
+  
+  /*---------media quaries--------*/
+  
+  @media only screen and (min-width: 1098px)  { .c2{ display:none;} #nav_bar{margin-top:-40px;}
+ }
+  @media only screen and (max-width: 1099px)  { #carousel{ display:none;}
+   }
+  @media only screen and (max-width: 1098px)  { .navbar{ margin-bottom:0px!important; } }
+  
+  @media only screen and (max-width: 1149px)  {.a{padding-left:3px;padding-right:3px;font-size:50px;}}
+  @media only screen and (max-width: 320px)  { .td{font-size:11px;}
+#nav_bar{position:fixed;z-index:3;}  }
+ 
+
+  
+  /*-------font-face------*/
+  @font-face {
+    font-family: chan;
+    src: url('../fonts/After Night.ttf');
+}
+@font-face {
+    font-family: rav;
+    src: url('../fonts/Rave King.ttf');
+}
+@font-face {
+    font-family: ran;
+    src: url('../fonts/28 Days Later.ttf');
+}
+
+@font-face {
+    font-family: dug;
+    src: url('../fonts/Silent Reaction.ttf');
+}
